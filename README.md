@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-> Math Magicians is a website for all fans of mathematics build with React library as a single page app (SPA) which allows user to make simple calculations and read a random math-related quote.
+> Math Magicians is a website for all fans of mathematics build with React library as a single page app (SPA) which allows user to make simple calculations and read a random math-related quote using React Router
 
 ## Built With
 
@@ -10,6 +10,7 @@
 - HTML
 - ReactJS
 - Webpack
+- TailwindCSS
 
 ## Getting Started
 

@@ -1,32 +1,10 @@
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul,
-form {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-ol,
-ul {
-  list-style-type: none;
-}
-
-.App {
-  display: flex;
-  justify-content: center;
-  padding: 3em 0;
+/* stylelint-disable-next-line */
+@layer components {
+  .activeLink {
+    @apply bg-white rounded-full text-rose-500;
+  }
 }
