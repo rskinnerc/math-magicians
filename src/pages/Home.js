@@ -1,5 +1,5 @@
 const Home = () => (
-  <div className="p-5">
+  <div className="p-5 lg:w-4/5 lg:mx-auto lg:p-0 lg:mt-10">
     <h1 className="text-white text-2xl font-semibold my-5">Welcome to our page!</h1>
     <p className="text-sky-100 mb-5">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
