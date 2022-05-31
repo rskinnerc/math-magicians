@@ -7,7 +7,7 @@ import Quote from './pages/Quote';
 
 // eslint-disable-next-line react/prefer-stateless-function
 const App = () => (
-  <div className="App">
+  <div className="bg-gradient-to-r from-sky-900 to-zinc-800 min-h-screen">
     <Navbar />
     <Routes>
       <Route index element={<Home />} />

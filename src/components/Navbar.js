@@ -1,14 +1,18 @@
-import { Link } from 'react-router-dom';
+import { Link, useMatch } from 'react-router-dom';
 
-const Navbar = () => (
-  <nav>
-    <span>Math Magicians</span>
-    <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/calculator">Calculator</Link></li>
-      <li><Link to="/quote">Quote</Link></li>
-    </ul>
-  </nav>
-);
+const Navbar = () => {
+  const activeClass = (path) => (useMatch(path) ? 'activeLink ' : 'text-rose-500 ');
+
+  return (
+    <nav>
+      <h1 className="text-rose-500 text-3xl text-center py-10 font-bold">Math Magicians</h1>
+      <ul className="flex justify-around">
+        <li><Link to="/" className={`${activeClass('/')} hover:text-rose-400 font-semibold p-2`}>Home</Link></li>
+        <li><Link to="/calculator" className={`${activeClass('/calculator')} hover:text-rose-400 font-semibold p-2`}>Calculator</Link></li>
+        <li><Link to="/quote" className={`${activeClass('/quote')} hover:text-rose-400 font-semibold p-2`}>Quote</Link></li>
+      </ul>
+    </nav>
+  );
+};
 
 export default Navbar;
