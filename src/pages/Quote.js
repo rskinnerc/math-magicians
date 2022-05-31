@@ -1,5 +1,5 @@
 const Quote = () => (
-  <div className="p-5">
+  <div className="p-5 lg:w-4/5 lg:mx-auto lg:p-0 lg:mt-24">
 
     <p className="text-sky-100 font-semibold italic text-2xl mt-24 text-right">
       &ldquo;Without mathematics, there’s nothing you can do. Everything around you is
