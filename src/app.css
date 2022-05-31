@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* stylelint-disable-next-line */
 @layer components {
   .activeLink {
     @apply bg-white rounded-full text-rose-500;
