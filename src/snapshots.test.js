@@ -7,6 +7,9 @@ import Button from './components/Button';
 import CalculatorPage from './pages/Calculator';
 import HomePage from './pages/Home';
 import QuotePage from './pages/Quote';
+import { getAnyQuote } from './logic/quotes';
+
+jest.mock('./logic/quotes');
 
 describe('Test snapshots', () => {
   test('check if App component renders correctly', () => {
@@ -56,6 +59,10 @@ describe('Test snapshots', () => {
   });
 
   test('check if Quote page renders correctly', () => {
+    getAnyQuote.mockReturnValue({
+      quote: 'Pure mathematics is, in its way, the poetry of logical ideas.',
+      author: 'Albert Einstein, German theoretical physicist',
+    });
     const renderedComponent = render(
       <QuotePage />,
     );
