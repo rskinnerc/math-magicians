@@ -193,14 +193,18 @@ Object {
       <li
         aria-hidden="true"
         class=""
-      />
+      >
+        AC
+      </li>
     </div>
   </body>,
   "container": <div>
     <li
       aria-hidden="true"
       class=""
-    />
+    >
+      AC
+    </li>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

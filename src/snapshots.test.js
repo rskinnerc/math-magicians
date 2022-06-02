@@ -39,7 +39,7 @@ describe('Test snapshots', () => {
 
   test('check if Button component renders correctly', () => {
     const renderedComponent = render(
-      <Button />,
+      <Button buttonName="AC" handleClick={() => { }} />,
     );
     expect(renderedComponent).toMatchSnapshot();
   });

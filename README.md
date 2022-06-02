@@ -16,6 +16,11 @@
 
 **This project is part of Microverse\'s Module 3 program, where ReactJS is used to build a SPA.**
 
+## Live Versions
+
+[Netlify Deploy](https://relaxed-klepon-ce6576.netlify.app/)
+[Heroku Deploy](https://math-magicians-rskinnerc.herokuapp.com/)
+
 ## Installation
 
 Clone this repository (you must have [Git Installed](https://github.com/git-guides/install-git))
